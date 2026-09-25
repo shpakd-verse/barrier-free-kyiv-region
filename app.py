@@ -28,7 +28,7 @@ df, filename = load_data()
 if df is not None:
     st.caption(f"📁 Останнє оновлення з файлу: `{filename}`")
 
-    if 'Тип джерела' not in df.columns:
+    if 'Тип джерела'not in df.columns:
         df['Тип джерела'] = '💬 Telegram'
     
    st.sidebar.header("🔍 Гнучкі фільтри")
